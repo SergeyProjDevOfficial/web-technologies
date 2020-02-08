@@ -1,0 +1,38 @@
+﻿.header-logo{
+    height: 75px;
+    width: 75px;
+}
+
+.header-image {
+    width: 100%;
+    max-width: 400px;
+}
+
+.contact-icon {
+    width: 54px;
+    flex: inherit
+}
+
+.contacts-block {
+    height: 200px;
+    background-color: lightgray;
+    padding: 25px 0 30px;
+}
+
+.contacts-block-title {
+    font-size: 25px;
+    font-family: cursive;
+    margin-bottom: 25px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contacts-item{
+    margin: 0 50px 0 50px
+}
+
+
