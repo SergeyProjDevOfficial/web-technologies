@@ -1,0 +1,6 @@
+.vs
+*.sln
+*.phpproj
+*.phpproj.user
+
+jsconfig.json
