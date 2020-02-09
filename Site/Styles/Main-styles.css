@@ -1452,7 +1452,6 @@ a:focus,
 }
 
 .mu-single-footer h3 {
-	color: #fff;
 	font-size: 18px;
 	text-transform: uppercase;
 	margin-bottom: 35px;
@@ -1468,10 +1467,6 @@ a:focus,
 
 .mu-single-footer ul li:last-child {
 	border-bottom: none;
-}
-
-.mu-single-footer ul li a {
-	color: #fff;
 }
 
 .mu-single-footer .mu-useful-links li {

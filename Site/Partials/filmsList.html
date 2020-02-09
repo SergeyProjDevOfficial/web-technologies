@@ -1,0 +1,72 @@
+﻿
+<h2>Улюблені Фільми</h2>
+
+<ol class="list-counter-circle container">
+    <li class="fnc-play-video" data-src="http://dl1.vibio.tv/64a9572f7b78bef7a77c16825b9f374c/2608/2608163/output.mp4" data-film-name="Кіборги (2017)">
+        <img class="video-icon" alt="Дивитись онлайн" src="../Media/Icons/Video.png"/>
+        <span class="list-item-text">Кіборги (2017)</span>
+    </li>
+    <li class="fnc-play-video" data-src="http://nl8.cdnlast.com/s/b2b2db600a36f83106a5de4f9b4dac529d3040/hd_30/Fight.Club.1999.DVO.Ukr.OpenMatte.WEBDL.1080p_720.mp4" data-film-name="Бійцівський клуб (1999)">
+        <img class="video-icon" alt="Дивитись онлайн" src="../Media/Icons/Video.png"/>
+        <span class="list-item-text">Бійцівський клуб (1999)</span>
+    </li>
+    <li class="fnc-play-video" data-src="http://calcium.cdn.videoframe.at/movies/003e5ab5ce575738a620615afc61eb9672493410/489677b76146a32ecfa729ac40c7bcf9:2020020917/720.mp4" data-film-name="Сигнал (2014)">
+        <img class="video-icon" alt="Дивитись онлайн" src="../Media/Icons/Video.png"/>
+        <span class="list-item-text">Сигнал (2014)</span>
+    </li>
+    <li class="fnc-play-video" data-src="http://vs1.cdnlast.com/s/b2b2db600a36f83106a5de4f9b4dac529d3040/hd_30/Shutter.Island.2010.BDRip.1080p_720.mp4" data-film-name="Острів проклятих (2009)">
+        <img class="video-icon" alt="Дивитись онлайн" src="../Media/Icons/Video.png"/>
+        <span class="list-item-text">Острів проклятих (2009)</span>
+    </li>
+    <li class="fnc-play-video" data-src="http://vs1.cdnlast.com/s/b2b2db600a36f83106a5de4f9b4dac529d3040/hd_30/The.Cabin.in.the.Woods2011ukr_720.mp4" data-film-name="Хатина у лісі (2012)">
+        <img class="video-icon" alt="Дивитись онлайн" src="../Media/Icons/Video.png"/>
+        <span class="list-item-text">Хатина у лісі (2012)</span>
+    </li>
+</ol>
+
+<div class="small-margin-top-bot">
+    <h2 class="fnc-film-title">Назва фільму</h2>
+    <video height="200" id="player"  controls>
+        <source class="fnc-player" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+        Your browser does not support the video tag.
+    </video>
+</div>
+
+<script>
+    $(document).ready(function () {
+
+        var $player = $('#player');
+        var $film_title = $('.fnc-film-title');
+        $player.hide();
+        $film_title.hide();
+
+        var PlayVideo = {
+
+            addListeners: function () {
+                var videos = $('.fnc-play-video');
+                if (videos.length) {
+                    videos.each(function (key, video) {
+                        PlayVideo.initVideo($(video));
+                    });
+                }
+            },
+
+            initVideo: function ($video) {
+                var src = $video.data('src');
+                var film_name = $video.data('film-name');
+                $video.click(function () {
+                    $film_title.text('Ви дивитесь фільм "' + film_name + '"');
+                    $film_title.show();
+                    $source = $('.fnc-player');
+                    $source.attr("src", src);
+                    $player[0].load();
+                    $player[0].play();
+                    $player.show();
+                    $("html, body").animate({ scrollTop: $film_title.offset().top }, 1000);
+                })
+
+            }
+        }
+        PlayVideo.addListeners();
+    });
+</script>

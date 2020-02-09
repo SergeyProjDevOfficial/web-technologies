@@ -1,6 +1,7 @@
 ﻿.header-logo{
     height: 75px;
     width: 75px;
+    float:left;
 }
 
 .header-image {
@@ -10,7 +11,7 @@
 
 .contact-icon {
     width: 54px;
-    flex: inherit
+    flex: inherit;
 }
 
 .contacts-block {
@@ -25,14 +26,142 @@
     margin-bottom: 25px;
 }
 
-.container {
+.container-contacts {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .contacts-item{
-    margin: 0 50px 0 50px
+    margin: 0 50px 0 50px;
+}
+
+.margin-container {
+    margin: 200px 75px 75px 75px;
+}
+
+.full_height{
+    height: 100%;
+    min-height: 1000px;
+}
+
+.link-color{
+    text-decoration: none;
+    color: yellow;
+}
+.link-color:hover {
+    text-decoration: none;
+    color: darkgoldenrod;
+}
+
+.small-margin-top-bot{
+    margin: 50px 0 50px 0; 
+}
+
+.right-arrow {
+    background-image: url(https://www.freepnglogos.com/uploads/arrow-png/file-curved-arrow-black-32.png);
+}
+
+blockquote {
+    border-left: none
+}
+
+.quote-badge {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.quote-box {
+    overflow: hidden;
+    margin-top: -50px;
+    padding-top: -100px;
+    border-radius: 17px;
+    background-color: #4ADFCC;
+    margin-top: 25px;
+    color: white;
+    width: 325px;
+    box-shadow: 2px 2px 2px 2px #E0E0E0;
+}
+
+.quotation-mark {
+    margin-top: -10px;
+    font-weight: bold;
+    font-size: 100px;
+    color: white;
+    font-family: "Times New Roman", Georgia, Serif;
+}
+
+.quote-text {
+    font-size: 19px;
+    margin-top: -65px;
 }
 
 
+table.dataTable thead .sorting:after,
+table.dataTable thead .sorting:before,
+table.dataTable thead .sorting_asc:after,
+table.dataTable thead .sorting_asc:before,
+table.dataTable thead .sorting_asc_disabled:after,
+table.dataTable thead .sorting_asc_disabled:before,
+table.dataTable thead .sorting_desc:after,
+table.dataTable thead .sorting_desc:before,
+table.dataTable thead .sorting_desc_disabled:after,
+table.dataTable thead .sorting_desc_disabled:before {
+    bottom: .5em;
+}
+.list-counter-circle {
+    list-style: none;
+    counter-reset: list;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 100%;
+    max-width: 500px;
+}
+
+    .list-counter-circle > li {
+        position: relative;
+        display: block;
+        height: 2rem;
+        line-height: 2rem;
+        margin-left: 1.75rem;
+        margin-bottom: .25rem;
+        padding-left: 1rem;
+        padding-right: .5rem;
+        color: #fff;
+        background: #7b1fa2;
+        white-space: nowrap;
+        border-radius: .25rem
+    }
+
+        .list-counter-circle > li:last-child {
+            margin-bottom: 0;
+        }
+
+        .list-counter-circle > li::before {
+            content: counter(list);
+            counter-increment: list;
+            position: absolute;
+            left: -2rem;
+            top: -.25rem;
+            bottom: -.25rem;
+            width: 2.5rem;
+            line-height: 2rem;
+            border-radius: 1.25rem;
+            border: .25rem solid #fff;
+            text-align: center;
+            color: #fff;
+            background: #7b1fa2;
+        }
+
+.video-icon {
+    float: right;
+    overflow: visible;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.list-item-text {
+    float: left;
+    color: white;
+}

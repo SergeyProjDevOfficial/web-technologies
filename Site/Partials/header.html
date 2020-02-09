@@ -1,0 +1,45 @@
+<header id="mu-hero">
+	<div class="container">
+		<nav class="navbar navbar-expand-lg navbar-light mu-navbar">
+			<a class="navbar-brand mu-logo" href="index.html">
+				<img class="header-logo" src="../Media/favico.png" alt="Лого" />
+			</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="fa fa-bars">☰</span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto mu-navbar-nav">
+					<li class="nav-item" id="main">
+						<a href="../index.html">Головна</a>
+					</li>
+					<li class="nav-item" id="project">
+						<a href="../project.html">Проект</a>
+					</li>
+				</ul>
+			</div>
+		
+		</nav>
+	</div>
+</header>
+
+<script>
+	$(document).ready(function () {
+
+		var MenuSelector = {
+			init: function () {
+				var active_page_button = $('.render-header').data('page-name');
+
+				if (active_page_button === 'main') {
+					$('#main').addClass("active");
+				}
+
+				if (active_page_button === 'project') {
+					$('#project').addClass("active");
+				}
+			}
+		};
+
+		MenuSelector.init();
+	});
+</script>
