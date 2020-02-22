@@ -1,45 +1,45 @@
-<header id="mu-hero">
-	<div class="container">
-		<nav class="navbar navbar-expand-lg navbar-light mu-navbar">
-			<a class="navbar-brand mu-logo" href="index.html">
-				<img class="header-logo" src="../Media/favico.png" alt="Лого" />
-			</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="fa fa-bars">☰</span>
-			</button>
-
-			<div class="collapse navbar-collapse" id="navbarSupportedContent">
-				<ul class="navbar-nav mr-auto mu-navbar-nav">
-					<li class="nav-item" id="main">
-						<a href="../index.html">Головна</a>
-					</li>
-					<li class="nav-item" id="project">
-						<a href="../project.html">Проект</a>
-					</li>
-				</ul>
-			</div>
-		
-		</nav>
+<div class="navbar navbar-expand-lg navbar-light background-style-header">
+	<a class="navbar-brand" href="../index.html">
+		<img height="40" width="40" src="../Media/favico.ico" alt="Головна" title="Головна"/>
+	</a>
+	<div class="flexible continer margin-left-1p">
+        <div>
+            <img class="pointer-cursor" height="40" width="40" src="../Media/Icons/Moon.png" alt="Темна тема" title="Темна тема" />
+        </div>
+        <div>
+            <img class="pointer-cursor" height="40" width="40" src="../Media/Icons/Sun.png" alt="Світла тема" title="Світла тема" />
+        </div>
 	</div>
-</header>
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		<ul class="navbar-nav mr-auto">
+			<li class="nav-item" id="main">
+				<a class="nav-link" href="../index.html">Головна</a>
+			</li>
+			<li class="nav-item" id="project">
+				<a class="nav-link" href="../project.html">Проект</a>
+			</li>
+		</ul>
+	</div>
+</div>
 
 <script>
 	$(document).ready(function () {
-
 		var MenuSelector = {
 			init: function () {
 				var active_page_button = $('.render-header').data('page-name');
-
-				if (active_page_button === 'main') {
-					$('#main').addClass("active");
+	
+                if (active_page_button === 'main') {
+                    $('#main').addClass("active").addClass("font-weight-bold");
 				}
-
+	
 				if (active_page_button === 'project') {
-					$('#project').addClass("active");
+					$('#project').addClass("active").addClass("font-weight-bold");
 				}
 			}
 		};
-
 		MenuSelector.init();
 	});
 </script>

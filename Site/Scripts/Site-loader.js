@@ -10,4 +10,6 @@
     $('.render-photos-block').load('../Partials/photosBlock.html');
     $('.render-quote').load('../Partials/quote.html');
     $('.render-map-with-text').load('../Partials/mapBlock.html');
+    $('.render-about-me').load('../Partials/aboutMe.html');
+
 });

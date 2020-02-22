@@ -95,8 +95,12 @@ blockquote {
     margin-top: -65px;
 }
 
+.fnc-play-video {
+    cursor: pointer;
+}
 
-table.dataTable thead .sorting:after,
+
+/*table.dataTable thead .sorting:after,
 table.dataTable thead .sorting:before,
 table.dataTable thead .sorting_asc:after,
 table.dataTable thead .sorting_asc:before,
@@ -151,7 +155,7 @@ table.dataTable thead .sorting_desc_disabled:before {
             text-align: center;
             color: #fff;
             background: #7b1fa2;
-        }
+        }*/
 
 .video-icon {
     float: right;

@@ -1,0 +1,80 @@
+﻿.pointer-cursor{
+    cursor: pointer
+}
+.flexible {
+    flex-direction: row;
+    display: flex
+}
+.margin-left-1p{
+    margin-left: 10vw
+}
+.small-margin-top-bot {
+    margin: 50px 0 50px 0;
+}
+.small-padding-top-bot {
+    padding: 50px 0 50px 0;
+}
+.small-margin-left-right {
+    margin: 0 50px 0 50px;
+}
+.small-padding-top {
+    padding: 50px 0 0 0;
+}
+.small-margin-top {
+    margin: 50px 0 0 0;
+}
+
+
+/*specials*/ 
+.image-width-100 {
+    width: 100%;
+    max-width: 600px;
+}
+.table-width-100 {
+    width: 100%;
+    max-width: 600px;
+}
+.table-th-width-1{
+    width: 40%;
+}
+.table-th-width-2 {
+    width: 30%;
+}
+.table-th-width-3 {
+    width: 20%;
+}
+.contact-icon {
+    width: 54px;
+    flex: inherit;
+}
+.contacts-block {
+    height: 200px;
+    padding: 25px 0 30px;
+}
+.contacts-block-title {
+    font-size: 25px;
+    font-family: cursive;
+    margin-bottom: 25px;
+}
+.container-contacts {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.video-icon {
+    float: right;
+    overflow: visible;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+.fnc-play-video{
+    cursor: pointer
+}
+.d-block{
+    width: 100%;
+    max-width: 500px
+}
+.full_height{
+    height: 700px;
+}

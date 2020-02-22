@@ -1,0 +1,56 @@
+﻿.background-style-1{
+    background-color: aliceblue
+}
+
+.background-style-2 {
+    background-color: lavender
+}
+
+.background-style-3 {
+    background-color: lightcyan
+}
+
+.background-style-4 {
+    background-color: papayawhip
+}
+
+.background-style-5 {
+    background-color: honeydew
+}
+
+.background-style-6 {
+    background-color: cornsilk
+}
+
+.background-style-7 {
+    background-color: whitesmoke
+}
+
+.links-style {
+    color: black
+}
+    .links-style:hover {
+        color: black;
+        text-decoration: none;
+    }
+.links-style-colorfull{
+    color: cornflowerblue;
+
+}
+
+
+.background-style-header {
+    background-color: paleturquoise;
+    border-bottom: double
+}
+.background-style-footer {
+    background-color: paleturquoise;
+    border-top: double
+}
+
+.textblock {
+    padding: 25px;
+    border: double;
+    border-color: blueviolet;
+    width: 60%
+}
