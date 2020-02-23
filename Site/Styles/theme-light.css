@@ -41,7 +41,11 @@
 
 .background-style-header {
     background-color: paleturquoise;
-    border-bottom: double
+    border-bottom: double;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 9999;
 }
 .background-style-footer {
     background-color: paleturquoise;

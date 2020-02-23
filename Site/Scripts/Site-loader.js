@@ -1,7 +1,7 @@
 ﻿$(document).ready(function () {
 
     // partials
-    $('.render-header').load('../Partials/header.html');
+    $('.render-header').load('../Partials/header.html');    
     $('.render-footer').load('../Partials/footer.html');
     $('.render-contacts').load('../Partials/contactsBar.html');
     $('.render-table').load('../Partials/sortableTable.html');
