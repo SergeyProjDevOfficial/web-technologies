@@ -53,11 +53,11 @@
                 var $themes = $('.theme-selector');
                 $themes.click(function (event) {
                     if (event.target.id === 'light') {
-                        console.log('light');
+                        $.cookie('theme', '../Styles/theme-light.css');
                         $('#theme').attr('href', '../Styles/theme-light.css')
                     } 
                     if (event.target.id === 'dark') {
-                        console.log('dark');
+                        $.cookie('theme', '../Styles/theme-dark.css');
                         $('#theme').attr('href', '../Styles/theme-dark.css')
                     }
                 })

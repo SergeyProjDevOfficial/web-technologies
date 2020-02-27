@@ -2,21 +2,28 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 
-	<title>Не існує :-(</title>
+    <title>Не існує :-(</title>
 
-	<link rel="icon" href="../Media/favico.ico" />
+    <link rel="icon" href="../Media/favico.ico" />
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
 
-	<script src="../Scripts/Site-loader.js"></script>
+    <script src="../Scripts/Site-loader.js"></script>
 
-	<link href="../Styles/system-styles.css" rel="stylesheet" />
-	<link href="../Styles/theme-light.css" rel="stylesheet" />
+    <link href="../Styles/system-styles.css" rel="stylesheet" />
+    <link href="../Styles/theme-light.css" id="theme" rel="stylesheet" />
 
-
+    <script>
+        $(document).ready(function () {
+            try {
+                $('#theme').attr('href', $.cookie('theme'));
+            } catch { }
+        });
+    </script>
 </head>
 <body>
     <nav class="render-header" data-page-name="404"></nav>
