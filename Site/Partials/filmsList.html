@@ -31,7 +31,7 @@
     </ul>
 
     <div class="small-margin-top-bot">
-        <h2 class="fnc-film-title">Назва фільму</h2>
+        <h2 class="fnc-film-title"></h2>
         <video height="200" id="player" controls>
             <source class="fnc-player" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
             Your browser does not support the video tag.
@@ -71,7 +71,7 @@
                     $player[0].load();
                     $player[0].play();
                     $player.show();
-                    $("html, body").animate({ scrollTop: $film_title.offset().top }, 1000);
+                    $("html, body").animate({ scrollTop: $film_title.offset().top-100 }, 1000);
                 })
 
             }

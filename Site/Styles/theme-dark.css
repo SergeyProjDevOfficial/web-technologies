@@ -1,0 +1,70 @@
+﻿.background-style-1 {
+    background-color: darkgrey;
+    color: white;
+}
+
+.background-style-2 {
+    background-color: darkolivegreen;
+    color: white;
+}
+
+.background-style-3 {
+    background-color: slategrey;
+}
+
+.background-style-4 {
+    background-color: lightslategrey;
+    color: white;
+}
+
+.background-style-5 {
+    background-color: teal;
+    color: white;
+}
+
+.background-style-6 {
+    background-color: slategray;
+    color: white;
+}
+
+.background-style-7 {
+    background-color: steelblue;
+
+}
+
+.links-style {
+    color: black
+}
+
+    .links-style:hover {
+        color: black;
+        text-decoration: none;
+    }
+
+.links-style-colorfull {
+    color: black
+}
+
+
+.background-style-header {
+    background-color: black;
+    color: white;
+    border-bottom: double;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 9999;
+}
+
+.background-style-footer {
+    background-color: black;
+    color:white;
+    border-top: double
+}
+
+.textblock {
+    padding: 25px;
+    border: double;
+    border-color: blueviolet;
+    width: 60%
+}

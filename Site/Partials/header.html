@@ -4,8 +4,6 @@
 		<img height="40" width="40" src="../Media/favico.ico" alt="Головна" title="Головна" />
 	</a>
 
-
-
 	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 		<span class="navbar-toggler-icon"></span>
 	</button>
@@ -23,10 +21,10 @@
 		Змінити тему:
 		<div class="flexible continer">
             <div>
-                <img class="pointer-cursor" height="40" width="40" src="../Media/Icons/Moon.png" alt="Темна тема" title="Темна тема" />
+                <img class="theme-selector pointer-cursor" id="dark" height="40" width="40" src="../Media/Icons/Moon.png" alt="Темна тема" title="Темна тема"/>
             </div>
             <div>
-                <img class="pointer-cursor" height="40" width="40" src="../Media/Icons/Sun.png" alt="Світла тема" title="Світла тема" />
+                <img class="theme-selector pointer-cursor" id="light" height="40" width="40" src="../Media/Icons/Sun.png" alt="Світла тема" title="Світла тема" />
             </div>
         </div>
     </div>
@@ -47,7 +45,24 @@
 					$('#project').addClass("active").addClass("font-weight-bold");
 				}
 			}
-		};
-		MenuSelector.init();
+        };
+        MenuSelector.init();
+
+        var ThemeSelector = {
+            init: function () {
+                var $themes = $('.theme-selector');
+                $themes.click(function (event) {
+                    if (event.target.id === 'light') {
+                        console.log('light');
+                        $('#theme').attr('href', '../Styles/theme-light.css')
+                    } 
+                    if (event.target.id === 'dark') {
+                        console.log('dark');
+                        $('#theme').attr('href', '../Styles/theme-dark.css')
+                    }
+                })
+            }
+        };
+        ThemeSelector.init();
 	});
 </script>
