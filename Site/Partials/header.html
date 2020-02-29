@@ -71,7 +71,12 @@
 
         var ImagesRepository = {
             update: function () {
-                var theme = $.cookie('theme');  
+                var theme = $.cookie('theme');
+
+                if (typeof theme === 'undefined') {
+                    theme = 'light';
+                }
+
                 $('#site-icon').attr('href', '../Media/favico-' + theme + '.ico');
                 $('.fnc-about-me-icon').attr('src', '../Media/Icons/Logo/Logo-' + theme + '.png');
                 $('.fnc-icon-selector').attr('src', '../Media/Icons/Logo/Logo-' + theme + '.png');
