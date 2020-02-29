@@ -1,35 +1,29 @@
-﻿.background-style-1 {
-    background-color: darkgrey;
-    color: white;
+﻿.background-style-about-me {
+    background-color: black
 }
 
-.background-style-2 {
-    background-color: darkolivegreen;
-    color: white;
+.background-style-contacts {
+    background-color: #e8e8e8
 }
 
-.background-style-3 {
-    background-color: slategrey;
+.background-style-table-block {
+    background-color: #F5F6F7
 }
 
-.background-style-4 {
-    background-color: lightslategrey;
-    color: white;
+.background-style-films-block {
+    background-color: #e8e8e8
 }
 
-.background-style-5 {
-    background-color: teal;
-    color: white;
+.background-style-qualities {
+    background-color: #F5F6F7
 }
 
-.background-style-6 {
-    background-color: slategray;
-    color: white;
+.background-style-photos-block {
+    background-color: #e8e8e8
 }
 
-.background-style-7 {
-    background-color: steelblue;
-
+.background-style-quote-block {
+    background-color: #F5F6F7
 }
 
 .links-style {
@@ -42,14 +36,15 @@
     }
 
 .links-style-colorfull {
-    color: black
+    color: cornflowerblue;
 }
 
 
 .background-style-header {
-    background-color: black;
-    color: white;
-    border-bottom: double;
+    background: white;
+    border-bottom: solid;
+    border-color: aliceblue;
+    border-width: 1px;
     position: fixed;
     top: 0px;
     width: 100%;
@@ -57,9 +52,8 @@
 }
 
 .background-style-footer {
-    background-color: black;
-    color:white;
-    border-top: double
+    background-color: white;
+    border-top: solid
 }
 
 .textblock {

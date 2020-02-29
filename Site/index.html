@@ -4,7 +4,7 @@
 
     <title>Особиста сторінка</title>
 
-    <link rel="icon" href="../Media/favico.ico" />
+    <link rel="icon" id="site-icon" href="../Media/favico-light.ico" />
 
     <meta name="description" content="Мій університетський сайт" />
     <meta name="keywords" content="HTML,CSS,JavaScript,ХПІ,МІТ-87б" />
@@ -25,7 +25,15 @@
     <script>
         $(document).ready(function () {
             try {
-                $('#theme').attr('href', $.cookie('theme'));
+                var $theme = $('#theme');
+                var $cookie = $.cookie('theme');
+
+                if ($cookie === 'light') {
+                    $theme.attr('href', '../Styles/theme-light.css');
+                }
+                if ($cookie === 'dark') {
+                    $theme.attr('href', '../Styles/theme-dark.css');
+                }
             } catch { }
         });
     </script>
@@ -42,7 +50,6 @@
 		<div class="render-photos-block"></div>
 		<div class="render-quote"></div>
 		<div class="render-map-with-text"></div>
-		<div class="render-contacts"></div>
 	</center>
 	<footer class="render-footer"></footer>
 </body>
