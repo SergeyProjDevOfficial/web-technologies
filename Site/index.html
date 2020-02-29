@@ -22,21 +22,8 @@
     <link href="../Styles/system-styles.css" rel="stylesheet" />
     <link href="../Styles/theme-light.css" id="theme" rel="stylesheet" />
 
-    <script>
-        $(document).ready(function () {
-            try {
-                var $theme = $('#theme');
-                var $cookie = $.cookie('theme');
+    <script src="../Scripts/Theme-loader.js"></script>
 
-                if ($cookie === 'light') {
-                    $theme.attr('href', '../Styles/theme-light.css');
-                }
-                if ($cookie === 'dark') {
-                    $theme.attr('href', '../Styles/theme-dark.css');
-                }
-            } catch { }
-        });
-    </script>
 </head>
 
 <body>

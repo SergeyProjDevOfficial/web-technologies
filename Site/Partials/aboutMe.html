@@ -1,15 +1,15 @@
 ﻿<div class="background-style-about-me small-padding-top-bot">
     
-    <h1>Про мене</h1>
+    <h1 class="about-me-header">Про мене</h1>
     
-    <img class="image-width-100 fnc-about-me-icon" src="../Media/Icons/Logo-light.png" alt="Фото на якому зображений Сергій Руденко" title="Сергій Руденко" />
+    <img class="image-width-100 fnc-about-me-icon" src="../Media/Icons/Logo/Logo-light.png" alt="Фото на якому зображений Сергій Руденко" title="Сергій Руденко" />
     
-    <h2 class="small-margin-top-bot">Сергій Руденко</h2>
+    <h2 class="small-margin-top-bot about-me-name">Сергій Руденко</h2>
 
 </div>
 
 <script>
     $(document).ready(function () {
-        try {$('.fnc-about-me-icon').attr('src', '../Media/Icons/Logo-' + $.cookie('theme') + '.png');} catch { }
+        try {$('.fnc-about-me-icon').attr('src', '../Media/Icons/Logo/Logo-' + $.cookie('theme') + '.png');} catch { }
     });
 </script>

@@ -73,8 +73,10 @@
             update: function () {
                 var theme = $.cookie('theme');  
                 $('#site-icon').attr('href', '../Media/favico-' + theme + '.ico');
-                $('.fnc-about-me-icon').attr('src', '../Media/Icons/Logo-' + theme + '.png');
-                $('.fnc-icon-selector').attr('src', '../Media/Icons/Logo-' + theme + '.png');
+                $('.fnc-about-me-icon').attr('src', '../Media/Icons/Logo/Logo-' + theme + '.png');
+                $('.fnc-icon-selector').attr('src', '../Media/Icons/Logo/Logo-' + theme + '.png');
+                $('.fnc-icon-mail').attr('src', '../Media/Icons/Mail/Mail-' + theme + '.png');
+                $('.fnc-icon-skype').attr('src', '../Media/Icons/Skype/Skype-' + theme + '.png');
                  // append with new images
             }
         }
@@ -86,6 +88,5 @@
         ThemeSelector.init();
 
         UpdateImages.update();
-        UpdateStyles.update();
 	});
 </script>

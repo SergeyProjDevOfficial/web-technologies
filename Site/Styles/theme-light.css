@@ -60,3 +60,7 @@
     border-color: blueviolet;
     width: 60%
 }
+.bg-img {
+    background: url('../Media/ProjectPhotos/1-light.jpg');
+    background-size: cover;
+}

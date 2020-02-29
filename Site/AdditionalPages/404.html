@@ -16,21 +16,16 @@
 
     <link href="../Styles/system-styles.css" rel="stylesheet" />
     <link href="../Styles/theme-light.css" id="theme" rel="stylesheet" />
+    
+    <script src="../Scripts/Theme-loader.js"></script>
 
-    <script>
-        $(document).ready(function () {
-            try {
-                $('#theme').attr('href', $.cookie('theme'));
-            } catch { }
-        });
-    </script>
 </head>
 <body>
     <nav class="render-header" data-page-name="404"></nav>
 
         <div class="full_height medium-margin-top">
-            <h1 class="margin-container">Помилка 404. Сторінка не існує</h1>
-            <h2 class="margin-container">
+            <h1 class="margin-container block-title">Помилка 404. Сторінка не існує</h1>
+            <h2 class="margin-container block-title">
                 Ця сторінка ще не створена.
                 Слідкуйте за моїми оновленнями.
                 Хоча не гaрантую,

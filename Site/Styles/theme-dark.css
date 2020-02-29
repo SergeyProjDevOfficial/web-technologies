@@ -1,29 +1,37 @@
-﻿.background-style-about-me {
+﻿body{
+    background-color: black
+}
+
+.background-style-about-me {
     background-color: black
 }
 
 .background-style-contacts {
-    background-color: #e8e8e8
+    background-color: #3b3b3b
 }
 
 .background-style-table-block {
-    background-color: #F5F6F7
+    background-color: black
 }
 
 .background-style-films-block {
-    background-color: #e8e8e8
+    background-color: #3b3b3b
 }
 
 .background-style-qualities {
-    background-color: #F5F6F7
+    background-color: black
 }
 
 .background-style-photos-block {
-    background-color: #e8e8e8
+    background-color: dimgray
 }
 
 .background-style-quote-block {
-    background-color: #F5F6F7
+    background-color: black
+}
+
+.background-style-about-city {
+    background-color: #2e2e2e
 }
 
 .links-style {
@@ -36,12 +44,12 @@
     }
 
 .links-style-colorfull {
-    color: cornflowerblue;
+    color: red;
 }
 
 
 .background-style-header {
-    background: white;
+    background: linear-gradient(to bottom, #ffffff 0%, #c4c4c4 100%);
     border-bottom: solid;
     border-color: aliceblue;
     border-width: 1px;
@@ -52,13 +60,59 @@
 }
 
 .background-style-footer {
-    background-color: white;
-    border-top: solid
+    background-color: black;
+    color: white
 }
 
 .textblock {
+    background-color: black;
+    color: white;
     padding: 25px;
     border: double;
     border-color: blueviolet;
     width: 60%
+}
+
+.about-me-header{
+    color: white;
+    font-family: Corbel
+}
+.about-me-name{
+    color: white;
+    font-family: 'MS UI Gothic'
+}
+.block-title{
+    color: white
+}
+.contacts-block-title {
+    color: white;
+    font-family: sans-serif
+}
+.table-bordered{
+    border-color: white;
+    border-width: 2px
+}
+.table-th {
+    background-color: palegoldenrod
+}
+.row-1 > td {
+    background-color: #454545;
+    color: aliceblue
+}
+.row-2 > td {
+    color: aliceblue
+}
+.qualities-list > li {
+    color: white
+}
+.mood-text{
+    color: white
+}
+.bg-img {
+    background: url('../Media/ProjectPhotos/1-dark.jpg');
+    background-size: cover;
+}
+
+a {
+    color: red
 }
