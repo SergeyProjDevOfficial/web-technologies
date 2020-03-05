@@ -31,40 +31,53 @@
         <center>
             <div class="small-margin-top small-padding-top-bot" style="width: 75%; background-color: white; height: 100%">
                 <h1>Гра на Unity3D "MGTOWn"</h1>
-				<div>
-					But this is not background image. You can only do this to a block, but not a inline element such as a input[type=text]. Or am I wrong? – deerchao Dec 7 '11 at 7:09
-					11
-					no need for the class="stretch", just use #background img {} as identifier in the css – BerggreenDK Aug 24 '12 at 8:04
-					z-index: -1; keeps your image in the background. If you desire to show your image in the foreground, you can either increase the z-index value or remove that index. – gokhanakkurt Oct 7 '13 at 16:09
-					The issue I am having is with IE8. The background image of a DIV stretches full but in IE8 the images goes outside the DIV hence not being able to see the full image. It gets cropped out. Here is my question: stackoverflow.com/questions/22331179/… – Si8 Mar 11 '14 at 17:25
-					1
-					The obvious mistake people do is to put the background image in the css (ie by background : url("example.png");) and then use the css attribute background-size:100%; beneath it to hopefully scale the image to screen width. This will not work, Will it? If you wish to put a background image for the body then an image attribute should be added to the body tag like <body background="example.png">
-					. Then use css background-size:100%; to scale it. – sjsam Jan 7 '15 at 8:52
-					But this is not background image. You can only do this to a block, but not a inline element such as a input[type=text]. Or am I wrong? – deerchao Dec 7 '11 at 7:09
-					11
-					no need for the class="stretch", just use #background img {} as identifier in the css – BerggreenDK Aug 24 '12 at 8:04
-					z-index: -1; keeps your image in the background. If you desire to show your image in the foreground, you can either increase the z-index value or remove that index. – gokhanakkurt Oct 7 '13 at 16:09
-					The issue I am having is with IE8. The background image of a DIV stretches full but in IE8 the images goes outside the DIV hence not being able to see the full image. It gets cropped out. Here is my question: stackoverflow.com/questions/22331179/… – Si8 Mar 11 '14 at 17:25
-					1
-					The obvious mistake people do is to put the background image in the css (ie by background : url("example.png");) and then use the css attribute background-size:100%; beneath it to hopefully scale the image to screen width. This will not work, Will it? If you wish to put a background image for the body then an image attribute should be added to the body tag like <body background="example.png">
-					. Then use css background-size:100%; to scale it. – sjsam Jan 7 '15 at 8:52
-					But this is not background image. You can only do this to a block, but not a inline element such as a input[type=text]. Or am I wrong? – deerchao Dec 7 '11 at 7:09
-					11
-					no need for the class="stretch", just use #background img {} as identifier in the css – BerggreenDK Aug 24 '12 at 8:04
-					z-index: -1; keeps your image in the background. If you desire to show your image in the foreground, you can either increase the z-index value or remove that index. – gokhanakkurt Oct 7 '13 at 16:09
-					The issue I am having is with IE8. The background image of a DIV stretches full but in IE8 the images goes outside the DIV hence not being able to see the full image. It gets cropped out. Here is my question: stackoverflow.com/questions/22331179/… – Si8 Mar 11 '14 at 17:25
-					1
-					The obvious mistake people do is to put the background image in the css (ie by background : url("example.png");) and then use the css attribute background-size:100%; beneath it to hopefully scale the image to screen width. This will not work, Will it? If you wish to put a background image for the body then an image attribute should be added to the body tag like <body background="example.png">
-					. Then use css background-size:100%; to scale it. – sjsam Jan 7 '15 at 8:52
-					But this is not background image. You can only do this to a block, but not a inline element such as a input[type=text]. Or am I wrong? – deerchao Dec 7 '11 at 7:09
-					11
-					no need for the class="stretch", just use #background img {} as identifier in the css – BerggreenDK Aug 24 '12 at 8:04
-					z-index: -1; keeps your image in the background. If you desire to show your image in the foreground, you can either increase the z-index value or remove that index. – gokhanakkurt Oct 7 '13 at 16:09
-					The issue I am having is with IE8. The background image of a DIV stretches full but in IE8 the images goes outside the DIV hence not being able to see the full image. It gets cropped out. Here is my question: stackoverflow.com/questions/22331179/… – Si8 Mar 11 '14 at 17:25
-					1
-					The obvious mistake people do is to put the background image in the css (ie by background : url("example.png");) and then use the css attribute background-size:100%; beneath it to hopefully scale the image to screen width. This will not work, Will it? If you wish to put a background image for the body then an image attribute should be added to the body tag like <body background="example.png">
-						. Then use css background-size:100%; to scale it. – sjsam Jan 7 '15 at 8:52
-			</div>
+                <div class="small-padding">
+                    <h4>Початок гри</h4>
+                    Гра починається зі сцени на якій головний герой гри,
+                    вимушений в черговий раз виконати отримує завдання доставити
+                    певний лист із таємний текстом, який він дізнається під час того
+                    як розкриває листа.
+
+                    <h4 class="small-padding-top">Ігровий світ та час</h4>
+                    Дії відбуваються на одній локації, але весь її діапазон стає доступним
+                    після здобуття досвіду персонажем.
+
+                    <h4 class="small-padding-top">Рух</h4>
+                    Персонаж вільно може переміщуватися всією ігровою картою за однієї умови,
+                    що при зустрічі із ворожим мобом бій розпочнеться автоматично не зі сторони
+                    гравця, в залежності від агресивності неігрового персонажу та часу доби. Моб
+                    проявлятиме агресію до персонажу, якщо той зайде на “його територію”.
+
+                    <br />
+
+                    Пересування може здійснюватися пішки, чи по вплав воді.
+
+                    <h4 class="small-padding-top">Ресурси </h4>
+                    Основними ресурсами гри є здоров’я та ігрова валюта. Здоров’я автоматично
+                    відновлюється на певний процент через кожен проміжок часу. Ігрова валюта здобувається
+                    такими способами:
+                    <br />
+                    - Виконання деяких з основних ігрових квестів; <br />
+                    - виконання побічних ігрових квестів;<br />
+                    - знаходження валюти у скринях та секретних скринях;<br />
+                    - продаж ресурсів, що випадають при вбивстві мобів.<br />
+
+                    <h4 class="small-padding-top">Персонаж гравця</h4>
+                    Гра представлена видом від першого лиця з метою кращого поглиблення в
+                    ігровий сюжет. Як було сказано вище, головний герой не має певного ім’я, бо він
+                    є уособленням кожного пригніченого чоловіка.
+
+                    <h4 class="small-padding-top">Фотографії з гри</h4>
+
+                    <img class="image-width-100" src="Media/ProjectPhotos/2.jpg" />
+                    <img class="image-width-100 small-margin-top" src="Media/ProjectPhotos/3.jpg" />
+                    <img class="image-width-100 small-margin-top" src="Media/ProjectPhotos/4.jpg" />
+
+                    <h4 class="small-padding-top"> 3D Модель павука з гри</h4>
+
+                    <a class="small-padding-top" href="../Media/Models/spider.html">Відкрити модель павука</a>
+                </div>
+
             </div>
         </center>
         <footer class="render-footer"></footer>

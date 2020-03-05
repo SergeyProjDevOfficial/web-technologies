@@ -62,5 +62,6 @@
 }
 .bg-img {
     background: url('../Media/ProjectPhotos/1-light.jpg');
-    background-size: cover;
+    background-size: 100% 100%;
+    background-attachment: fixed
 }

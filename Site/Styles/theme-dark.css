@@ -46,6 +46,9 @@
 .links-style-colorfull {
     color: red;
 }
+a {
+    color: red
+}
 
 
 .background-style-header {
@@ -110,9 +113,8 @@
 }
 .bg-img {
     background: url('../Media/ProjectPhotos/1-dark.jpg');
-    background-size: cover;
+    background-size: 100% 100%;
+    background-attachment: fixed;
 }
 
-a {
-    color: red
-}
+

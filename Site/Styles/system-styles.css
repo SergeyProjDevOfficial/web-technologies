@@ -26,6 +26,12 @@
 .medium-margin-top{
     margin: 100px 0 0 0 ;
 }
+.small-padding{
+    padding: 25px
+}
+a {
+    color: dodgerblue
+}
 
 
 /*specials*/ 
@@ -84,4 +90,8 @@
 .margin-container {
     margin: 10% 0 0 15%;
     width: 75%
+}
+.video-container{
+    width: 100%; 
+    max-width: 400px
 }
