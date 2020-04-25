@@ -1,4 +1,4 @@
 # web-technologies
 University site
 
-# public address: [Will appear here]
+# public address: https://web-tech-khpi.000webhostapp.com/index.html
